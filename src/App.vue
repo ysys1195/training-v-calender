@@ -4,10 +4,13 @@
 </script>
 
 <template>
-  <div>
-    各カレンダー
-  </div>
   <router-view></router-view>
+  <div class="links">
+    <h2>カレンダー</h2>
+    <router-link class="link" to="/" >V-Calender</router-link>
+    <router-link class="link" to="/self_calender" >自作カレンダー</router-link>
+  </div>
+  
 </template>
 
 <style scoped>
@@ -21,5 +24,23 @@
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+.links {
+  margin: 20px;
+  padding: 10px 20px 20px;
+  background-color: gray;
+  border-radius: 10px;
+}
+a {
+  color: black;
+}
+.links .link {
+  display: inline-block;
+  background-color: rgb(216, 143, 116);
+  padding: 10px;
+  margin: 8px;
+  border-radius: 20px;
+  font-size: 14px;
 }
 </style>
