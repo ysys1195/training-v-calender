@@ -9,6 +9,7 @@
     <h2>カレンダー</h2>
     <router-link class="link" to="/" >V-Calender</router-link>
     <router-link class="link" to="/self_calender" >自作カレンダー</router-link>
+    <router-link class="link" to="/accordion" >アコーディオン</router-link>
   </div>
   
 </template>
