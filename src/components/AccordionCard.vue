@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from "vue"
+import {ref, onMounted} from "vue"
 defineProps({
   text: String
 })
@@ -8,6 +8,11 @@ const onClickCard = () => {
   show.value = !show.value
   console.log(show.value);
 }
+onMounted (() => {
+  const textHeight = document.getElementsByClassName('text')[0].height
+  console.log(textHeight);
+})
+
 </script>
 
 <template>
